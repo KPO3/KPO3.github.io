@@ -136,17 +136,6 @@ p {
     color: var(--pallete-darker-orange);
     border-color: var(--pallete-darker-orange);
 }
-.scroll-portfolio {
-    display: block;
-    position:absolute;
-    bottom: 50px;
-
-    background: var(--pallete-graphite);
-    
-    color:var(--pallete-white);
-    font-size: 3rem;
-    text-decoration:none;
-}
 
 #general {
     width: 50vw;
