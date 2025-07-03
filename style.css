@@ -96,7 +96,7 @@ header {
 h1 {
     margin: 0;
     font-family: "Playfair Display", serif;
-    font-size: 7rem;
+    font-size: 10vh;
     font-style: italic;
     color: var(--pallete-red);
 }
@@ -104,7 +104,7 @@ h2 {
     margin-top: 0.5rem;
     margin-bottom: 0;
     font-family: 'Cormorant Garamond', serif;
-    font-size : 3rem;
+    font-size : 3vh;
     font-style: italic;
 }
 p {
@@ -142,9 +142,6 @@ p {
 }
 #general h1 {
     padding-top: 25vh;
-}
-main section {
-    margin-top: 2rem;
 }
 main section {
     scroll-snap-align: start;
