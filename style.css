@@ -22,7 +22,7 @@ body {
 
 
     background-image: url("images/антифон.png");
-    background-size: 20%;
+    background-size: 500px;
     background-repeat:repeat;
 }
 em {
@@ -35,9 +35,14 @@ em {
 
 #general {
     width: 50vw;
+    height: 100vh;
 }
 #general h1 {
     padding-top: 25vh;
+}
+#general h2 {
+    margin-top: 5px;
+    margin-bottom: 50px;
 }
 #general::before {
     content: "";
@@ -51,7 +56,6 @@ em {
 main section {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
-    height: 100vh;
     margin: 0;
     padding: 0;
     padding-left: 5vw;
@@ -64,6 +68,9 @@ main section::before {
     height: 18vh;
     background-color:var(--pallete-white);
     z-index:-2;
+}
+#contacts {
+    margin-bottom: 400px;
 }
 
 
@@ -79,15 +86,15 @@ h1 {
     text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.5);
 }
 h2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
+    margin-top: 15px;
+    margin-bottom: 5px;
     font-family: 'Cormorant Garamond', serif;
     font-size : 3vh;
     font-style: italic;
 }
 p {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 1.5rem;
 }
 
@@ -99,7 +106,7 @@ p {
     padding-top: 3px;
     padding-bottom: 15px;
     margin: 0;
-    width: 40%;
+    width: 800px;
     left:30%;
 
     border-bottom-left-radius: 50px;
@@ -111,14 +118,14 @@ p {
     justify-content: center;
 
     background-image: url("images/фон.png");
-    background-size: 20%;
+    background-size: 200px;
     background-repeat:repeat;
 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Размытая тень вокруг */
 }
 .top-menu a {
     display: block;
-    padding: 1.2vh 1.75vw;
+    padding: 1.2vh 25px;
     background: var(--pallete-darker-orange);
 
     font-family: 'Cormorant Garamond', serif;
@@ -192,7 +199,7 @@ p {
 }
 
 
-/* Фото */
+/* Фото меня */
 
 .gradient img {
     max-width: 50vw;
@@ -219,6 +226,22 @@ p {
     );
 }
 
+
+/* Портфолио */
+
+.portfolio-images {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 16px;
+    padding: 8px;
+}
+.portfolio-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 @media (max-width: 1000px) {
     #general {
         width: 80vw;
@@ -226,26 +249,28 @@ p {
     #general h1 {
         padding-top: 10vh;
     }
+    #general h2 {
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
     h1 {
         font-size: 15vw;
         text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
     }
     h2 {
-        margin-top: 0.5rem;
-        margin-bottom: 0;
+        margin-top: 15px;
+        margin-bottom: 5px;
         font-family: 'Cormorant Garamond', serif;
         font-size : 3vh;
         font-style: italic;
     }
     p {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
         font-size: 1.2rem;
     }
     .top-menu {
         gap: 10px;
-    }
-    .top-menu {
         width: 100%;
         left:0%;
 
@@ -254,6 +279,9 @@ p {
 
         padding-bottom:5px;
 
+    }
+    .top-menu a {
+        padding: 1.2vh 1.75vw;
     }
 }
 
